@@ -39,17 +39,17 @@ def write_league_info_to_file():
                 score = match['score']['fullTime']
                 file.write(f"{home_team} {score['home']} - {score['away']} {away_team}\n")
             
-            # Top Scorers
-            file.write("\n🔥 Top Scorers:\n")
-            scorers = get_top_scorers(league_code)
-            if not scorers:
-                file.write("No scorers data available.\n")
-            else:
-                for i, scorer in enumerate(scorers, start=1):
-                    player = scorer['player']['name']
-                    team = scorer['team']['name']
-                    goals = scorer['goals']
-                    file.write(f"{i}. {player} ({team}) - {goals} goals\n")
+            # # Top Scorers
+            # file.write("\n🔥 Top Scorers:\n")
+            # scorers = get_top_scorers(league_code)
+            # if not scorers:
+            #     file.write("No scorers data available.\n")
+            # else:
+            #     for i, scorer in enumerate(scorers, start=1):
+            #         player = scorer['player']['name']
+            #         team = scorer['team']['name']
+            #         goals = scorer['goals']
+            #         file.write(f"{i}. {player} ({team}) - {goals} goals\n")
 
         # 🕒 Add current time at the end
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
