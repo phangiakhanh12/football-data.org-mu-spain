@@ -1,17 +1,11 @@
 #!/bin/bash
+cd /home/khanhphan/football-data.org-mu-spain || exit 1
 
-set -e  # Exit on error
+# Now run your docker build and run commands here
+docker build -t mu-summary .
+docker run --rm mu-summary
 
-echo "📦 Running container to fetch data..."
-docker build -t league-summary .
-docker run --env-file .env -v "$PWD:/app" league-summary
-
-echo "✅ league_summary.txt generated."
-
-# Git automation
-echo "📤 Committing and pushing to GitHub..."
+# And your git add, commit, push steps
 git add league_summary.txt
-git commit -m "📊 Weekly update: $(date)"
+git commit -m "Weekly update: $(date '+%Y-%m-%d')"
 git push
-
-echo "✅ All done!"
