@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app code
 COPY src/ ./src
-COPY summaries/ ./summaries
+RUN mkdir -p ./summaries
 COPY tests/ ./tests
 
 # Set environment variable for API token (can be overridden during docker run)
