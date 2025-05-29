@@ -1,5 +1,6 @@
 import os
 import requests
+from datetime import datetime
 
 API_TOKEN = os.getenv("API_TOKEN")
 HEADERS = {"X-Auth-Token": API_TOKEN}
@@ -15,8 +16,8 @@ OUTPUT_FILE = "league_summary.txt"
 def get_recent_matches(league_code):
     url = f"https://api.football-data.org/v4/competitions/{league_code}/matches?status=FINISHED&limit=5"
     response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    return response.json().get('matches', [])
+    matches = response.json().get('matches', [])
+    return matches
 
 def get_top_scorers(league_code):
     url = f"https://api.football-data.org/v4/competitions/{league_code}/scorers?limit=3"
@@ -24,34 +25,35 @@ def get_top_scorers(league_code):
     response.raise_for_status()
     return response.json().get('scorers', [])
 
-def generate_summary():
+def write_league_info_to_file():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
         for league_name, league_code in LEAGUES.items():
-            file.write(f"\n=============== {league_name.upper()} ===============\n\n")
-
+            file.write(f"\n=============== {league_name} ===============\n")
+            
             # Recent Matches
-            try:
-                matches = get_recent_matches(league_code)
-                file.write("📅 Recent Matches:\n")
-                for match in matches:
-                    home = match['homeTeam']['name']
-                    away = match['awayTeam']['name']
-                    score = match['score']['fullTime']
-                    file.write(f"{home} {score['home']} - {score['away']} {away}\n")
-            except Exception as e:
-                file.write(f"Error fetching recent matches for {league_name}: {e}\n")
-
+            matches = get_recent_matches(league_code)
+            file.write("\n📅 Recent Matches:\n")
+            for match in matches:
+                home_team = match['homeTeam']['name']
+                away_team = match['awayTeam']['name']
+                score = match['score']['fullTime']
+                file.write(f"{home_team} {score['home']} - {score['away']} {away_team}\n")
+            
             # Top Scorers
-            try:
-                scorers = get_top_scorers(league_code)
-                file.write("\n🔥 Top 3 Scorers:\n")
+            file.write("\n🔥 Top Scorers:\n")
+            scorers = get_top_scorers(league_code)
+            if not scorers:
+                file.write("No scorers data available.\n")
+            else:
                 for i, scorer in enumerate(scorers, start=1):
-                    name = scorer['player']['name']
+                    player = scorer['player']['name']
                     team = scorer['team']['name']
                     goals = scorer['goals']
-                    file.write(f"{i}. {name} ({team}) - {goals} goals\n")
-            except Exception as e:
-                file.write(f"Error fetching top scorers for {league_name}: {e}\n")
+                    file.write(f"{i}. {player} ({team}) - {goals} goals\n")
+
+        # 🕒 Add current time at the end
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        file.write(f"\n⏱️  Data last updated at: {current_time}\n")
 
 if __name__ == "__main__":
-    generate_summary()
+    write_league_info_to_file()
