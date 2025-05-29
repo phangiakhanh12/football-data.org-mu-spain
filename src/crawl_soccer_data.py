@@ -1,6 +1,7 @@
 from utils import get_next_match, get_recent_match, get_goal_scorers_and_ratings
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 OUTPUT_DIR = "summaries"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
