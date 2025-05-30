@@ -11,7 +11,7 @@ echo "✅ league_summary.txt generated."
 
 # Git automation
 echo "📤 Committing and pushing to GitHub..."
-git add league_summary.txt
+git add .
 git commit -m "📊 Weekly update: $(date)"
 git push origin main
 
