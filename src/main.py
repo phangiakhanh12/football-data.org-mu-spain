@@ -55,11 +55,7 @@ def write_league_info_to_file():
             #         team = scorer['team']['name']
             #         goals = scorer['goals']
             #         file.write(f"{i}. {player} ({team}) - {goals} goals\n")
-
-        # 🕒 Add current time at the end
-        current_time = datetime.now().astimezone()
-        file.write(f"\n⏱️  Data last updated at: {current_time.strftime('%H:%M:%S %Z')}\n")
-
+        
 if __name__ == "__main__":
     write_league_info_to_file()
 

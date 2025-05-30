@@ -20,11 +20,9 @@ Valencia CF 0 - 1 Athletic Club
 =============== Serie A ===============
 
 📅 Recent Matches:
-Atalanta BC 2 - 3 Parma Calcio 1913
-Empoli FC 1 - 2 Hellas Verona FC
-SS Lazio 0 - 1 US Lecce
-Torino FC 0 - 2 AS Roma
-Udinese Calcio 2 - 3 ACF Fiorentina
-
-⏱️  Data last updated at: 07:18:11 UTC
-Data last updated at: Fri May 30 02:18:11 PM +07 2025
+Cagliari Calcio 3 - 0 Venezia FC
+ACF Fiorentina 3 - 2 Bologna FC 1909
+Hellas Verona FC 1 - 1 Como 1907
+FC Internazionale Milano 2 - 2 SS Lazio
+Juventus FC 2 - 0 Udinese Calcio
+Data last updated at: Fri May 30 02:19:37 PM +07 2025
