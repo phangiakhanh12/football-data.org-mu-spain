@@ -8,6 +8,7 @@ docker build -t league-summary .
 docker run --env-file .env -v "$PWD:/app" league-summary
 
 echo "✅ league_summary.txt generated."
+echo "Data last updated at: $(date)" >> league_summary.txt
 
 # Git automation
 echo "📤 Committing and pushing to GitHub..."
