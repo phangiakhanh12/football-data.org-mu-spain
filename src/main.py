@@ -14,10 +14,15 @@ LEAGUES = {
 OUTPUT_FILE = "league_summary.txt"
 
 def get_recent_matches(league_code):
-    url = f"https://api.football-data.org/v4/competitions/{league_code}/matches?status=FINISHED&limit=5"
+    url = f"https://api.football-data.org/v4/competitions/{league_code}/matches?status=FINISHED"
     response = requests.get(url, headers=HEADERS)
     matches = response.json().get('matches', [])
-    return matches
+
+    # Sort by match date (most recent first)
+    matches.sort(key=lambda x: x['utcDate'], reverse=True)
+
+    # Return only the 5 most recent
+    return matches[:5]
 
 def get_top_scorers(league_code):
     url = f"https://api.football-data.org/v4/competitions/{league_code}/scorers?limit=3"
@@ -57,3 +62,4 @@ def write_league_info_to_file():
 
 if __name__ == "__main__":
     write_league_info_to_file()
+
