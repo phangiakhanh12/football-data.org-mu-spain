@@ -11,18 +11,19 @@ Manchester United FC 2 - 0 Aston Villa FC
 =============== La Liga ===============
 
 📅 Recent Matches:
-Club Atlético de Madrid 4 - 1 Real Betis Balompié
-RC Celta de Vigo 1 - 2 Rayo Vallecano de Madrid
-FC Barcelona 2 - 3 Villarreal CF
-Sevilla FC 0 - 2 Real Madrid CF
-Valencia CF 0 - 1 Athletic Club
+Athletic Club 0 - 3 FC Barcelona
+Villarreal CF 4 - 2 Sevilla FC
+Girona FC 0 - 4 Club Atlético de Madrid
+Deportivo Alavés 1 - 1 CA Osasuna
+Getafe CF 1 - 2 RC Celta de Vigo
 
 =============== Serie A ===============
 
 📅 Recent Matches:
-Cagliari Calcio 3 - 0 Venezia FC
-ACF Fiorentina 3 - 2 Bologna FC 1909
-Hellas Verona FC 1 - 1 Como 1907
-FC Internazionale Milano 2 - 2 SS Lazio
-Juventus FC 2 - 0 Udinese Calcio
-Current time: 06:57:58
+Atalanta BC 2 - 3 Parma Calcio 1913
+Empoli FC 1 - 2 Hellas Verona FC
+SS Lazio 0 - 1 US Lecce
+Torino FC 0 - 2 AS Roma
+Udinese Calcio 2 - 3 ACF Fiorentina
+
+⏱️  Data last updated at: 07:05:22
