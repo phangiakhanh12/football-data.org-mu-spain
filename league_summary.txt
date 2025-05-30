@@ -372,16 +372,6 @@ Arsenal FC 1 - 0 Newcastle United FC
 Brighton & Hove Albion FC 3 - 2 Liverpool FC
 Crystal Palace FC 4 - 2 Wolverhampton Wanderers FC
 Manchester City FC 3 - 1 AFC Bournemouth
-AFC Bournemouth 2 - 0 Leicester City FC
-Fulham FC 0 - 2 Manchester City FC
-Ipswich Town FC 1 - 3 West Ham United FC
-Liverpool FC 1 - 1 Crystal Palace FC
-Manchester United FC 2 - 0 Aston Villa FC
-Newcastle United FC 0 - 1 Everton FC
-Nottingham Forest FC 0 - 1 Chelsea FC
-Southampton FC 1 - 2 Arsenal FC
-Tottenham Hotspur FC 1 - 4 Brighton & Hove Albion FC
-Wolverhampton Wanderers FC 1 - 1 Brentford FC
 
 =============== La Liga ===============
 
@@ -1140,15 +1130,5 @@ US Lecce 1 - 0 Torino FC
 AC Monza 1 - 3 Empoli FC
 Parma Calcio 1913 0 - 0 SSC Napoli
 AS Roma 3 - 1 AC Milan
-Como 1907 0 - 2 FC Internazionale Milano
-SSC Napoli 2 - 0 Cagliari Calcio
-Bologna FC 1909 1 - 3 Genoa CFC
-AC Milan 2 - 0 AC Monza
-Atalanta BC 2 - 3 Parma Calcio 1913
-Empoli FC 1 - 2 Hellas Verona FC
-SS Lazio 0 - 1 US Lecce
-Torino FC 0 - 2 AS Roma
-Udinese Calcio 2 - 3 ACF Fiorentina
-Venezia FC 2 - 3 Juventus FC
 
-⏱️  Data last updated at: 2025-05-30 06:22:47
+⏱️  Data last updated at: 2025-05-30 06:27:37
