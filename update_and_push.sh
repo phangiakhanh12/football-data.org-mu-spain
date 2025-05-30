@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/khanhphan/football-data.org-mu-spain || exit 1
 
 set -e  # Exit on error
 
