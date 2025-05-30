@@ -1,6 +1,5 @@
 import os
 import requests
-from datetime import datetime
 
 API_TOKEN = os.getenv("API_TOKEN")
 HEADERS = {"X-Auth-Token": API_TOKEN}
