@@ -16,11 +16,11 @@ Manchester United FC 2 - 0 Aston Villa FC
 =============== La Liga ===============
 
 📅 Recent Matches:
-Club Atlético de Madrid 4 - 1 Real Betis Balompié
-RC Celta de Vigo 1 - 2 Rayo Vallecano de Madrid
-FC Barcelona 2 - 3 Villarreal CF
-Sevilla FC 0 - 2 Real Madrid CF
-Valencia CF 0 - 1 Athletic Club
+Athletic Club 0 - 3 FC Barcelona
+Villarreal CF 4 - 2 Sevilla FC
+Girona FC 0 - 4 Club Atlético de Madrid
+Deportivo Alavés 1 - 1 CA Osasuna
+Getafe CF 1 - 2 RC Celta de Vigo
 
 🔥 Top Scorers:
 1. Kylian Mbappé (Real Madrid CF) - 31 goals
@@ -41,4 +41,4 @@ Udinese Calcio 2 - 3 ACF Fiorentina
 2. Moise Kean (ACF Fiorentina) - 19 goals
 3. Riccardo Orsolini (Bologna FC 1909) - 15 goals
 
-Data last updated at: Fri May 30 02:26:32 PM +07 2025
+Data last updated at: Fri May 30 02:57:07 PM +07 2025
