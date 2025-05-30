@@ -25,4 +25,5 @@ Empoli FC 1 - 2 Hellas Verona FC
 SS Lazio 0 - 1 US Lecce
 Torino FC 0 - 2 AS Roma
 Udinese Calcio 2 - 3 ACF Fiorentina
-Data last updated at: Fri May 30 02:21:03 PM +07 2025
+
+Data last updated at: Fri May 30 02:22:21 PM +07 2025
