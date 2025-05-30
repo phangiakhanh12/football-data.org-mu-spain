@@ -8,14 +8,24 @@ Ipswich Town FC 1 - 3 West Ham United FC
 Liverpool FC 1 - 1 Crystal Palace FC
 Manchester United FC 2 - 0 Aston Villa FC
 
+🔥 Top Scorers:
+1. Mohamed Salah (Liverpool FC) - 29 goals
+2. Alexander Isak (Newcastle United FC) - 23 goals
+3. Erling Haaland (Manchester City FC) - 22 goals
+
 =============== La Liga ===============
 
 📅 Recent Matches:
-Athletic Club 0 - 3 FC Barcelona
-Villarreal CF 4 - 2 Sevilla FC
-Girona FC 0 - 4 Club Atlético de Madrid
-Deportivo Alavés 1 - 1 CA Osasuna
-Getafe CF 1 - 2 RC Celta de Vigo
+Club Atlético de Madrid 4 - 1 Real Betis Balompié
+RC Celta de Vigo 1 - 2 Rayo Vallecano de Madrid
+FC Barcelona 2 - 3 Villarreal CF
+Sevilla FC 0 - 2 Real Madrid CF
+Valencia CF 0 - 1 Athletic Club
+
+🔥 Top Scorers:
+1. Kylian Mbappé (Real Madrid CF) - 31 goals
+2. Robert Lewandowski (FC Barcelona) - 27 goals
+3. Ante Budimir (CA Osasuna) - 21 goals
 
 =============== Serie A ===============
 
@@ -26,4 +36,9 @@ SS Lazio 0 - 1 US Lecce
 Torino FC 0 - 2 AS Roma
 Udinese Calcio 2 - 3 ACF Fiorentina
 
-Data last updated at: Fri May 30 02:22:21 PM +07 2025
+🔥 Top Scorers:
+1. Mateo Retegui (Atalanta BC) - 25 goals
+2. Moise Kean (ACF Fiorentina) - 19 goals
+3. Riccardo Orsolini (Bologna FC 1909) - 15 goals
+
+Data last updated at: Fri May 30 02:26:32 PM +07 2025

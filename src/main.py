@@ -27,8 +27,10 @@ def get_recent_matches(league_code):
 def get_top_scorers(league_code):
     url = f"https://api.football-data.org/v4/competitions/{league_code}/scorers?limit=3"
     response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    return response.json().get('scorers', [])
+    scorers = response.json().get('scorers', [])
+
+    # Return only the 5 most recent
+    return scorers[:5]
 
 def write_league_info_to_file():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
@@ -44,17 +46,17 @@ def write_league_info_to_file():
                 score = match['score']['fullTime']
                 file.write(f"{home_team} {score['home']} - {score['away']} {away_team}\n")
             
-            # # Top Scorers
-            # file.write("\n🔥 Top Scorers:\n")
-            # scorers = get_top_scorers(league_code)
-            # if not scorers:
-            #     file.write("No scorers data available.\n")
-            # else:
-            #     for i, scorer in enumerate(scorers, start=1):
-            #         player = scorer['player']['name']
-            #         team = scorer['team']['name']
-            #         goals = scorer['goals']
-            #         file.write(f"{i}. {player} ({team}) - {goals} goals\n")
+            # Top Scorers
+            file.write("\n🔥 Top Scorers:\n")
+            scorers = get_top_scorers(league_code)
+            if not scorers:
+                file.write("No scorers data available.\n")
+            else:
+                for i, scorer in enumerate(scorers, start=1):
+                    player = scorer['player']['name']
+                    team = scorer['team']['name']
+                    goals = scorer['goals']
+                    file.write(f"{i}. {player} ({team}) - {goals} goals\n")
         file.write("\n")
         
 if __name__ == "__main__":
